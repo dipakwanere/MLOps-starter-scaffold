@@ -1,14 +1,28 @@
 install:
-	pip install --upgrade pip &&\
+	python.exe -m pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
 lint:
 	pylint --disable=R,C *.py
 
 test:
-	pytest tests/ --cov=src/ --cov-report=term-missing --verbose
+	python -m pytest --verbose
+	#tests/ --cov=src/ --cov-report=term-missing --verbose
 
 format:
 	black . *.py
+
+# train:
+# 	python src/train.py
+
+# build:
+# 	docker build -t mlops-project:latest .
+
+# run:
+# 	docker run --rm mlops-project:latest
+
+# clean:
+# 	rm -rf __pycache__ .pytest_cache models/*
+
 
 all: install lint test format
