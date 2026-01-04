@@ -8,3 +8,7 @@ pytest
 black
 FastAPI
 uvicorn
+ipython
+textblob
+wikipedia
+fire
