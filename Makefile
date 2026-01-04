@@ -6,7 +6,7 @@ lint:
 	pylint --disable=R,C *.py
 
 test:
-	python -m pytest --verbose
+	python -m pytest -vv tests/test_*.py
 	#tests/ --cov=src/ --cov-report=term-missing --verbose
 
 format:
