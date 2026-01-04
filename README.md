@@ -9,3 +9,12 @@ fire -  tool to build a cli tools quickly with your functions and classes.
 
 ## textblob: 
 - Simplified Text Processing. Provides a simple API for diving into common natural language processing (NLP) tasks such as part-of-speech tagging, noun phrase extraction, sentiment analysis, classification, translation, and more.
+
+
+## Created a CLI tool using fire for phrase extraction from text using Stanford CoreNLP.
+
+How to run it:
+```
+./wikiphrases.py --name "Golden State Worriers"
+```
+This will extract phrases from the input text "Golden State Worriers" using Stanford CoreNLP.

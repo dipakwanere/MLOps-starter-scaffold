@@ -21,7 +21,7 @@ def get_text_blob(text):
     return blob
 
 
-def get_phrases(text):
+def get_phrases(name):
     """Find wikipedia anme and returns back phrases"""
     text = summarize_wikipedia(name)
     blob = get_text_blob(text)
