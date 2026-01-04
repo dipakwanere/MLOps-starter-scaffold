@@ -10,7 +10,7 @@ test:
 	#tests/ --cov=src/ --cov-report=term-missing --verbose
 
 format:
-	black . *.py
+	black .
 
 # train:
 # 	python src/train.py
